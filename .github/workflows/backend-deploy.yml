@@ -1,0 +1,29 @@
+name: Deploy Backend
+
+on:
+  push:
+    branches: [ main ]
+    paths: [ 'apps/node/**' ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          
+      - name: Install dependencies
+        working-directory: apps/node
+        run: npm install
+        
+      - name: Build project
+        working-directory: apps/node
+        run: npm run build
+        
+      - name: Start server
+        working-directory: apps/node
+        run: npm start &
