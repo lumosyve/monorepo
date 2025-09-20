@@ -25,7 +25,8 @@ jobs:
         run: |
           npm install vue-tsc@latest
           npm run build
-        
+          touch dist/.nojekyll
+          
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
