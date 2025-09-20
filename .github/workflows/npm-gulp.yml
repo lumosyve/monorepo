@@ -18,6 +18,7 @@ jobs:
       with:
         node-version: 22
         cache: 'npm'
+        path: 'apps/frontend'
 
     - name: Install Dependencies
       run: |
