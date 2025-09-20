@@ -3,6 +3,9 @@ name: NodeJS with Gulp
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - 'apps/frontend/**'
+      - 'apps/node/**'
   pull_request:
     branches: [ "main" ]
 
