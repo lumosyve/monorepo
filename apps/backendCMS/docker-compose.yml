@@ -1,0 +1,8 @@
+services:
+  backend-nest:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    ports:
+      - '7001:7001'
+    container_name: 'backend-nest'

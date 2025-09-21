@@ -1,0 +1,54 @@
+# 开发环境配置
+app:
+  https: false
+  prefix: '/admin-api'
+  host: '127.0.0.1'
+  ocrHost: 'http://192.168.31.220:8000'
+  port: 7001
+  permission: true
+  staticPath: 'public/upload'
+  uploadSizeLimit: 10
+# 数据库
+db:
+  mysql:
+    host: '192.168.31.84'
+    username: 'root'
+    password: 'ZHENGjie0830!'
+    database: 'backend_cms_dev'
+    port: 3306
+    charset: 'utf8mb4'
+    logger: 'advanced-console'
+    logging: false
+    multipleStatements: true
+    dropSchema: false
+    synchronize: false
+    supportBigNumbers: true
+    bigNumberStrings: true
+
+# redis 配置
+redis:
+  host: '192.168.31.84'
+  port: 16379
+  db: 0
+  password: '4zbndsfh'
+
+# jwt 配置（过期时间单位为秒）
+jwt:
+  secretkey: 'YmFja2VuZF9ub2Rl'
+  expiresIn: 86400
+  # expiresin: '5s'
+  # refreshExpiresIn: '2h'
+# swagger 配置
+swagger:
+  title: 'Lumosyve CMS Api'
+  description: 'Lumosyve CMS 接口文档'
+  version: '1.0.0'
+
+# 错误码
+errorCode:
+  valid: 400
+
+# 全局
+common:
+  # 白名单
+  whiteList: ['/favicon.ico', '/sys/auth/login', '/sys/auth/wxLogin']

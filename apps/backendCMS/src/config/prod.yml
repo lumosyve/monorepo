@@ -1,0 +1,9 @@
+app:
+  https: false
+  prefix: '/admin-api'
+  host: '192.168.31.84'
+  ocrHost: 'http://192.168.31.84:18000'
+  port: 7001
+  permission: true
+  staticPath: 'public/upload'
+  uploadSizeLimit: 10

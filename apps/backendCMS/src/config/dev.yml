@@ -1,0 +1,16 @@
+# 数据库
+db:
+  mysql:
+    host: '127.0.0.1'
+    username: 'root'
+    password: '4zbndsfh'
+    database: 'backend_nest'
+    port: 3306
+    charset: 'utf8mb4'
+    logger: 'advanced-console'
+    logging: false
+    multipleStatements: true
+    dropSchema: false
+    synchronize: false
+    supportBigNumbers: true
+    bigNumberStrings: true
