@@ -27,10 +27,8 @@
 
 <script lang="ts" setup>
 import { onMounted } from 'vue'
-import { useCounterStore } from '../stores/counter'
 import HelloWorld from '../components/HelloWorld.vue'
 
-const counterStore = useCounterStore()
 
 onMounted(() => {
   console.log('Home view mounted')

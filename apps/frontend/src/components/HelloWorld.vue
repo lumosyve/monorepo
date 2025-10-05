@@ -1,6 +1,5 @@
 <template>
   <div class="hello-world">
-    <h2>{{ msg }}</h2>
     <p>
       这是一个基于Vue 3 + TypeScript + Vite的前端项目组件示例。
     </p>
@@ -25,10 +24,6 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-
-defineProps<{
-  msg: string
-}>()
 
 const count = ref(0)
 const loading = ref(false)

@@ -1,3 +1,11 @@
 packages:
   - 'apps/*'
   - 'packages/*'
+
+catalog:
+  vite: ^5.0.0
+  vue: ^3.4.21
+  vue-router: ^4.2.0
+  pinia: ^2.1.0
+  vue-tsc: ^1.8.0
+  typescript: ^5.0.0
