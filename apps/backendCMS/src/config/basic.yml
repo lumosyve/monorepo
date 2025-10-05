@@ -14,7 +14,7 @@ db:
     host: '192.168.31.84'
     username: 'root'
     password: 'ZHENGjie0830!'
-    database: 'backend_cms_dev'
+    database: 'backend_nest'
     port: 3306
     charset: 'utf8mb4'
     logger: 'advanced-console'
