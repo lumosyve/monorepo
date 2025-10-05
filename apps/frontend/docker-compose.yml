@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  lipinka-nginx:
+    image: nginx:latest
+    container_name: lumosyve-frontend-nginx 
+    ports:
+      - "1316:80"  # 主机端口:容器端口
+    volumes:
+      - /data/frontend/lumosyve/frontend/dist:/usr/share/nginx/html  # 挂载前端目录
+      - /data/frontend/lumosyve/frontend/nginx-conf:/etc/nginx/conf.d  # 添加配置目录挂载
+    restart: always  # 异常退出时自动重启 
